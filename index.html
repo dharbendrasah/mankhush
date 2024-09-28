@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-color: rgb(6, 9, 42);
+    }
+
+    .swiper {
+      width: 240px;
+      height: 320px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <h1 class="text-white text-4xl">Ev Villian</h1>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/01.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/02.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/03.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/04.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/05.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/06.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/07.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/08.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/09.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/10.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/11.jpg" />
+      </div>
+      <div class="swiper-slide relative">
+        <img class="w-[100%] h-[100%] object-cover object-top" src="./images/12.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+</body>
+
+</html>
